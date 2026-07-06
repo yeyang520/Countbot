@@ -1,0 +1,188 @@
+2026-05-22 12:46:08 | ERROR    | backend.modules.providers.openai_provider:chat_stream:89 - OpenAI call failed [APIError]: <400> InternalError.Algo.DataInspectionFailed: Output data may contain inappropriate content.
+Traceback (most recent call last):
+
+  File "/app/start_app.py", line 137, in <module>
+    main()
+    └ <function main at 0x7c2f35262e80>
+
+  File "/app/start_app.py", line 120, in main
+    uvicorn.run(
+    │       └ <function run at 0x7c2f343e3740>
+    └ <module 'uvicorn' from '/usr/local/lib/python3.11/site-packages/uvicorn/__init__.py'>
+
+  File "/usr/local/lib/python3.11/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x7c2f34258cc0>
+    └ <uvicorn.server.Server object at 0x7c2f3420c110>
+  File "/usr/local/lib/python3.11/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x7c2f34258d60>
+           │       │   └ <uvicorn.server.Server object at 0x7c2f3420c110>
+           │       └ <function run at 0x7c2f34612660>
+           └ <module 'asyncio' from '/usr/local/lib/python3.11/asyncio/__init__.py'>
+  File "/usr/local/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x7c2f34168f40>
+           │      └ <function Runner.run at 0x7c2f3468e020>
+           └ <asyncio.runners.Runner object at 0x7c2f340e6710>
+  File "/usr/local/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at /usr/local/lib/python3.11/site-packages/uvicorn/server.py:69> wai...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7c2f3468bc40>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7c2f340e6710>
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7c2f3468bba0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7c2f3468d9e0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7c2f345c3ec0>
+    └ <Handle <TaskStepMethWrapper object at 0x7c2f132afac0>()>
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7c2f132afac0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7c2f132afac0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7c2f132afac0>()>
+
+  File "/app/backend/modules/channels/handler.py", line 697, in handle_message
+    response, response_reasoning = await self._process_with_agent(
+                                         │    └ <function ChannelMessageHandler._process_with_agent at 0x7c2f3089d1c0>
+                                         └ <backend.modules.channels.handler.ChannelMessageHandler object at 0x7c2f30930a90>
+
+  File "/app/backend/modules/channels/handler.py", line 906, in _process_with_agent
+    async for chunk in self.agent_loop.process_message(
+              │        │    │          └ <function AgentLoop.process_message at 0x7c2f313a2480>
+              │        │    └ <backend.modules.agent.loop.AgentLoop object at 0x7c2f30d94410>
+              │        └ <backend.modules.channels.handler.ChannelMessageHandler object at 0x7c2f30930a90>
+              └ '现任'
+
+  File "/app/backend/modules/agent/loop.py", line 275, in process_message
+    async for chunk in active_provider.chat_stream(
+              │        │               └ <function OpenAIProvider.chat_stream at 0x7c2f3111da80>
+              │        └ <backend.modules.providers.openai_provider.OpenAIProvider object at 0x7c2f2bbb0590>
+              └ StreamChunk(content='现任', tool_call=None, finish_reason=None, usage=None, error=None, raw_error=None, reasoning_content=None,...
+
+> File "/app/backend/modules/providers/openai_provider.py", line 72, in chat_stream
+    async for chunk in self._chat_stream_via_chat_completions(
+              │        │    └ <function OpenAIProvider._chat_stream_via_chat_completions at 0x7c2f3111db20>
+              │        └ <backend.modules.providers.openai_provider.OpenAIProvider object at 0x7c2f2bbb0590>
+              └ StreamChunk(content='现任', tool_call=None, finish_reason=None, usage=None, error=None, raw_error=None, reasoning_content=None,...
+
+  File "/app/backend/modules/providers/openai_provider.py", line 228, in _chat_stream_via_chat_completions
+    async for chunk in stream:
+              │        └ <openai.AsyncStream object at 0x7c2f1328ac50>
+              └ ChatCompletionChunk(id='chatcmpl-7da04a0a-305c-9dee-8066-d938bfd68ef7', choices=[Choice(delta=ChoiceDelta(content='现任', funct...
+
+  File "/usr/local/lib/python3.11/site-packages/openai/_streaming.py", line 158, in __aiter__
+    async for item in self._iterator:
+              │       │    └ <async_generator object AsyncStream.__stream__ at 0x7c2f22eebba0>
+              │       └ <openai.AsyncStream object at 0x7c2f1328ac50>
+              └ ChatCompletionChunk(id='chatcmpl-7da04a0a-305c-9dee-8066-d938bfd68ef7', choices=[Choice(delta=ChoiceDelta(content='现任', funct...
+  File "/usr/local/lib/python3.11/site-packages/openai/_streaming.py", line 205, in __stream__
+    raise APIError(
+          └ <class 'openai.APIError'>
+
+openai.APIError: <400> InternalError.Algo.DataInspectionFailed: Output data may contain inappropriate content.
+2026-05-22 12:48:24 | ERROR    | backend.modules.providers.openai_provider:chat_stream:89 - OpenAI call failed [APIError]: <400> InternalError.Algo.DataInspectionFailed: Output data may contain inappropriate content.
+Traceback (most recent call last):
+
+  File "/app/start_app.py", line 137, in <module>
+    main()
+    └ <function main at 0x7c2f35262e80>
+
+  File "/app/start_app.py", line 120, in main
+    uvicorn.run(
+    │       └ <function run at 0x7c2f343e3740>
+    └ <module 'uvicorn' from '/usr/local/lib/python3.11/site-packages/uvicorn/__init__.py'>
+
+  File "/usr/local/lib/python3.11/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x7c2f34258cc0>
+    └ <uvicorn.server.Server object at 0x7c2f3420c110>
+  File "/usr/local/lib/python3.11/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x7c2f34258d60>
+           │       │   └ <uvicorn.server.Server object at 0x7c2f3420c110>
+           │       └ <function run at 0x7c2f34612660>
+           └ <module 'asyncio' from '/usr/local/lib/python3.11/asyncio/__init__.py'>
+  File "/usr/local/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x7c2f34168f40>
+           │      └ <function Runner.run at 0x7c2f3468e020>
+           └ <asyncio.runners.Runner object at 0x7c2f340e6710>
+  File "/usr/local/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at /usr/local/lib/python3.11/site-packages/uvicorn/server.py:69> wai...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7c2f3468bc40>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7c2f340e6710>
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7c2f3468bba0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7c2f3468d9e0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7c2f345c3ec0>
+    └ <Handle <TaskStepMethWrapper object at 0x7c2f223e0e20>()>
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7c2f223e0e20>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7c2f223e0e20>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7c2f223e0e20>()>
+
+  File "/app/backend/modules/channels/handler.py", line 697, in handle_message
+    response, response_reasoning = await self._process_with_agent(
+                                         │    └ <function ChannelMessageHandler._process_with_agent at 0x7c2f3089d1c0>
+                                         └ <backend.modules.channels.handler.ChannelMessageHandler object at 0x7c2f30930a90>
+
+  File "/app/backend/modules/channels/handler.py", line 906, in _process_with_agent
+    async for chunk in self.agent_loop.process_message(
+              │        │    │          └ <function AgentLoop.process_message at 0x7c2f313a2480>
+              │        │    └ <backend.modules.agent.loop.AgentLoop object at 0x7c2f30d94410>
+              │        └ <backend.modules.channels.handler.ChannelMessageHandler object at 0x7c2f30930a90>
+              └ '逝世'
+
+  File "/app/backend/modules/agent/loop.py", line 275, in process_message
+    async for chunk in active_provider.chat_stream(
+              │        │               └ <function OpenAIProvider.chat_stream at 0x7c2f3111da80>
+              │        └ <backend.modules.providers.openai_provider.OpenAIProvider object at 0x7c2f133df3d0>
+              └ StreamChunk(content='逝世', tool_call=None, finish_reason=None, usage=None, error=None, raw_error=None, reasoning_content=None,...
+
+> File "/app/backend/modules/providers/openai_provider.py", line 72, in chat_stream
+    async for chunk in self._chat_stream_via_chat_completions(
+              │        │    └ <function OpenAIProvider._chat_stream_via_chat_completions at 0x7c2f3111db20>
+              │        └ <backend.modules.providers.openai_provider.OpenAIProvider object at 0x7c2f133df3d0>
+              └ StreamChunk(content='逝世', tool_call=None, finish_reason=None, usage=None, error=None, raw_error=None, reasoning_content=None,...
+
+  File "/app/backend/modules/providers/openai_provider.py", line 228, in _chat_stream_via_chat_completions
+    async for chunk in stream:
+              │        └ <openai.AsyncStream object at 0x7c2f1326d0d0>
+              └ ChatCompletionChunk(id='chatcmpl-09c438b7-c584-9aef-8cae-aad3d2b75482', choices=[Choice(delta=ChoiceDelta(content='逝世', funct...
+
+  File "/usr/local/lib/python3.11/site-packages/openai/_streaming.py", line 158, in __aiter__
+    async for item in self._iterator:
+              │       │    └ <async_generator object AsyncStream.__stream__ at 0x7c2f22eebba0>
+              │       └ <openai.AsyncStream object at 0x7c2f1326d0d0>
+              └ ChatCompletionChunk(id='chatcmpl-09c438b7-c584-9aef-8cae-aad3d2b75482', choices=[Choice(delta=ChoiceDelta(content='逝世', funct...
+  File "/usr/local/lib/python3.11/site-packages/openai/_streaming.py", line 205, in __stream__
+    raise APIError(
+          └ <class 'openai.APIError'>
+
+openai.APIError: <400> InternalError.Algo.DataInspectionFailed: Output data may contain inappropriate content.

@@ -1,0 +1,642 @@
+2026-05-25 12:02:25 | INFO     | backend.utils.logger:setup_logger:126 - 日志系统初始化完成
+2026-05-25 12:02:25 | DEBUG    | backend.utils.process_manager:_cleanup_feishu_workers:90 - pgrep command not available (Windows platform?)
+2026-05-25 12:02:25 | DEBUG    | backend.utils.process_manager:write_pid_file:150 - PID file written: data/.CountBot.pid (PID: 1)
+2026-05-25 12:02:25 | DEBUG    | backend.utils.process_manager:setup:189 - Signal handlers registered
+2026-05-25 12:02:25 | INFO     | __main__:main:86 - ============================================================
+2026-05-25 12:02:25 | INFO     | __main__:main:87 - CountBot 启动中...
+2026-05-25 12:02:25 | INFO     | __main__:main:88 - ============================================================
+2026-05-25 12:02:25 | INFO     | __main__:main:93 - 服务器启动完成！
+2026-05-25 12:02:25 | INFO     | __main__:main:94 - ============================================================
+2026-05-25 12:02:25 | INFO     | __main__:main:97 - Local:   http://localhost:8000
+2026-05-25 12:02:25 | INFO     | __main__:main:103 - Network: http://172.17.0.2:8000
+2026-05-25 12:02:25 | INFO     | __main__:main:111 - ------------------------------------------------------------
+2026-05-25 12:02:25 | INFO     | __main__:main:112 - 浏览器将在 15 秒后自动打开
+2026-05-25 12:02:25 | INFO     | __main__:main:113 - 按下 Ctrl+C 停止服务器
+2026-05-25 12:02:25 | INFO     | __main__:main:114 - ============================================================
+2026-05-25 12:02:26 | INFO     | backend.utils.logger:setup_logger:126 - 日志系统初始化完成
+2026-05-25 12:02:26 | DEBUG    | backend.modules.tools.file_audit_logger:__init__:39 - FileAuditLogger initialized: data/audit_logs
+2026-05-25 12:02:26 | DEBUG    | backend.modules.tools.conversation_history:__init__:64 - 工具对话历史使用数据库模式
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:174 - Starting CountBot backend...
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:177 - Database initialized
+2026-05-25 12:02:27 | INFO     | backend.modules.workspace.manager:activate_workspace_path:108 - 工作空间路径: /app/workspace
+2026-05-25 12:02:27 | INFO     | backend.modules.config.loader:load:66 - 配置加载完成
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:179 - Configuration loaded
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:195 - Creating shared components...
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:38 - Getting provider metadata...
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:56 - Setting up workspace...
+2026-05-25 12:02:27 | INFO     | backend.modules.workspace.manager:activate_workspace_path:108 - 工作空间路径: /app/workspace
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:65 - Creating LLM provider...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.providers.factory:create_provider:78 - Using OpenAIProvider for qwen
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:77 - Creating memory and skills directories...
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:88 - Workspace: /app/workspace
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:89 - Skills directory: /app/workspace/skills
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:91 - Initializing memory store...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.memory:__init__:31 - MemoryStore initialized: /app/workspace/memory/MEMORY.md
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:94 - Loading skills...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_load_disabled_skills:173 - Skills config file not found: /app/workspace/.skills_config.json
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: agent-browser
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: agent-team-manager
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: baidu-search
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: cron-manager
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: email
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: find-skills
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: humanizer-1.0.0
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: ima-knowledge-base
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: ima-notes
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: image-analysis
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: map
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: news
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: skill-creator
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: web-design
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.skills:_load_all_skills:318 - Loaded 14 skills total
+2026-05-25 12:02:27 | INFO     | backend.modules.agent.skills:__init__:168 - Loaded 14 skills
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:97 - Building context builder...
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:105 - Creating subagent manager...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.subagent:__init__:95 - SubagentManager initialized
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:117 - Preparing tool parameters...
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:135 - Registering all tools...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:__init__:61 - ToolRegistry initialized (using contextvars for session isolation)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.file_audit_logger:set_enabled:44 - File audit logging enabled
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:set_audit_enabled:67 - Audit logging enabled
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:61 - ReadFileTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: read_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:294 - WriteFileTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: write_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:377 - EditFileTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: edit_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:525 - ListDirTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: list_dir
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:68 - Registered filesystem tools
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.shell:__init__:112 - ExecTool initialized: workspace=/app/workspace, timeout=180s, max_output=10000, allow_dangerous=False, restrict_to_workspace=False
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: exec
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:90 - Registered shell tools (dangerous_blocked=True, workspace_restricted=False)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: external_coding_agent
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:109 - Registered external coding agent tool with enabled profiles: claude, codex
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.web:__init__:193 - WebFetchTool initialized with: BeautifulSoup4 (better extraction), httpx (fallback)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: web_fetch
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:123 - Registered web fetch tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: spawn
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:134 - Registered spawn tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: workflow_run
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:147 - Registered workflow_run tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.screenshot:__init__:44 - ScreenshotTool initialized: workspace=/app/workspace, output_dir=screenshots
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: screenshot
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:174 - Registered screenshot tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.file_search:__init__:42 - FileSearchTool initialized (default_max_results: 20)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: file_search
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:188 - Registered file search tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: memory
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:198 - Registered memory tool (unified)
+2026-05-25 12:02:27 | INFO     | backend.modules.wiki.service:_load_or_rebuild_index:90 - BM25 index loaded from cache: 0 documents
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: wiki
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:210 - Registered wiki tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:223 - Xiaozhi send_message tool not registered - enabled=False, conversation=False
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: read_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: write_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: edit_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: list_dir
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: exec
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: external_coding_agent
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: web_fetch
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: spawn
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: workflow_run
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: screenshot
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: file_search
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: memory
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: wiki
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:get_definitions:296 - Generated 13 tool definitions (13 builtin, 0 MCP)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:227 - Registered 13 tools
+2026-05-25 12:02:27 | INFO     | backend.app:_create_shared_components:137 - Registered 13 tools
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:200 - Shared components created
+2026-05-25 12:02:27 | INFO     | backend.api.chat:set_global_subagent_manager:466 - Global SubagentManager set
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:206 - Creating message queue and rate limiter...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.messaging.enterprise_queue:__init__:141 - EnterpriseMessageQueue initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.messaging.rate_limiter:__init__:44 - RateLimiter initialized: 10 requests per 60 seconds
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:213 - Message queue and rate limiter created
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:216 - Creating message handler...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:__init__:61 - ToolRegistry initialized (using contextvars for session isolation)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.file_audit_logger:set_enabled:44 - File audit logging enabled
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:set_audit_enabled:67 - Audit logging enabled
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:61 - ReadFileTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: read_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:294 - WriteFileTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: write_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:377 - EditFileTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: edit_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:525 - ListDirTool initialized
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: list_dir
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:68 - Registered filesystem tools
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.shell:__init__:112 - ExecTool initialized: workspace=/app/workspace, timeout=180s, max_output=10000, allow_dangerous=False, restrict_to_workspace=False
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: exec
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:90 - Registered shell tools (dangerous_blocked=True, workspace_restricted=False)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: external_coding_agent
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:109 - Registered external coding agent tool with enabled profiles: claude, codex
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.web:__init__:193 - WebFetchTool initialized with: BeautifulSoup4 (better extraction), httpx (fallback)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: web_fetch
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:123 - Registered web fetch tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: spawn
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:134 - Registered spawn tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: workflow_run
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:147 - Registered workflow_run tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.screenshot:__init__:44 - ScreenshotTool initialized: workspace=/app/workspace, output_dir=screenshots
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: screenshot
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:174 - Registered screenshot tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.file_search:__init__:42 - FileSearchTool initialized (default_max_results: 20)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: file_search
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:188 - Registered file search tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: memory
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:198 - Registered memory tool (unified)
+2026-05-25 12:02:27 | INFO     | backend.modules.wiki.service:_load_or_rebuild_index:90 - BM25 index loaded from cache: 0 documents
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: wiki
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:210 - Registered wiki tool
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:223 - Xiaozhi send_message tool not registered - enabled=False, conversation=False
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: read_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: write_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: edit_file
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: list_dir
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: exec
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: external_coding_agent
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: web_fetch
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: spawn
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: workflow_run
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: screenshot
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: file_search
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: memory
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: wiki
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.registry:get_definitions:296 - Generated 13 tool definitions (13 builtin, 0 MCP)
+2026-05-25 12:02:27 | DEBUG    | backend.modules.tools.setup:register_all_tools:227 - Registered 13 tools
+2026-05-25 12:02:27 | DEBUG    | backend.modules.agent.loop:__init__:67 - AgentLoop initialized: max_iterations=25, max_retries=3
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:234 - Message handler created
+2026-05-25 12:02:27 | INFO     | backend.app:lifespan:237 - Creating channel manager...
+2026-05-25 12:02:27 | DEBUG    | backend.modules.channels.manager:_init_channels:76 - WeChatChannel initialized for wechat:default
+2026-05-25 12:02:27 | DEBUG    | backend.modules.channels.manager:_init_channels:76 - WeChatChannel initialized for wechat:bot
+2026-05-25 12:02:30 | INFO     | backend.modules.channels.manager:_init_channels:82 - Initialized 2 channel(s): ['wechat:default', 'wechat:bot']
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:__init__:61 - ToolRegistry initialized (using contextvars for session isolation)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.file_audit_logger:set_enabled:44 - File audit logging enabled
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:set_audit_enabled:67 - Audit logging enabled
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:61 - ReadFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: read_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:294 - WriteFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: write_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:377 - EditFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: edit_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:525 - ListDirTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: list_dir
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:68 - Registered filesystem tools
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.shell:__init__:112 - ExecTool initialized: workspace=/app/workspace, timeout=180s, max_output=10000, allow_dangerous=False, restrict_to_workspace=False
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: exec
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:90 - Registered shell tools (dangerous_blocked=True, workspace_restricted=False)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: external_coding_agent
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:109 - Registered external coding agent tool with enabled profiles: claude, codex
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.web:__init__:193 - WebFetchTool initialized with: BeautifulSoup4 (better extraction), httpx (fallback)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: web_fetch
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:123 - Registered web fetch tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: spawn
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:134 - Registered spawn tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: workflow_run
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:147 - Registered workflow_run tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: send_media
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:164 - Registered send_media tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.screenshot:__init__:44 - ScreenshotTool initialized: workspace=/app/workspace, output_dir=screenshots
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: screenshot
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:174 - Registered screenshot tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.file_search:__init__:42 - FileSearchTool initialized (default_max_results: 20)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: file_search
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:188 - Registered file search tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: memory
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:198 - Registered memory tool (unified)
+2026-05-25 12:02:30 | INFO     | backend.modules.wiki.service:_load_or_rebuild_index:90 - BM25 index loaded from cache: 0 documents
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: wiki
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:210 - Registered wiki tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:223 - Xiaozhi send_message tool not registered - enabled=False, conversation=False
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: read_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: write_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: edit_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: list_dir
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: exec
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: external_coding_agent
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: web_fetch
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: spawn
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: workflow_run
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: send_media
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: screenshot
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: file_search
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: memory
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: wiki
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:get_definitions:296 - Generated 14 tool definitions (14 builtin, 0 MCP)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:227 - Registered 14 tools
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:__init__:61 - ToolRegistry initialized (using contextvars for session isolation)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.file_audit_logger:set_enabled:44 - File audit logging enabled
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:set_audit_enabled:67 - Audit logging enabled
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:61 - ReadFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: read_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:294 - WriteFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: write_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:377 - EditFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: edit_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:525 - ListDirTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: list_dir
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:68 - Registered filesystem tools
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.shell:__init__:112 - ExecTool initialized: workspace=/app/workspace, timeout=180s, max_output=10000, allow_dangerous=False, restrict_to_workspace=False
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: exec
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:90 - Registered shell tools (dangerous_blocked=True, workspace_restricted=False)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: external_coding_agent
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:109 - Registered external coding agent tool with enabled profiles: claude, codex
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.web:__init__:193 - WebFetchTool initialized with: BeautifulSoup4 (better extraction), httpx (fallback)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: web_fetch
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:123 - Registered web fetch tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: spawn
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:134 - Registered spawn tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: workflow_run
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:147 - Registered workflow_run tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: send_media
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:164 - Registered send_media tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.screenshot:__init__:44 - ScreenshotTool initialized: workspace=/app/workspace, output_dir=screenshots
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: screenshot
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:174 - Registered screenshot tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.file_search:__init__:42 - FileSearchTool initialized (default_max_results: 20)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: file_search
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:188 - Registered file search tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: memory
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:198 - Registered memory tool (unified)
+2026-05-25 12:02:30 | INFO     | backend.modules.wiki.service:_load_or_rebuild_index:90 - BM25 index loaded from cache: 0 documents
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: wiki
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:210 - Registered wiki tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:223 - Xiaozhi send_message tool not registered - enabled=False, conversation=False
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: read_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: write_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: edit_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: list_dir
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: exec
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: external_coding_agent
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: web_fetch
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: spawn
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: workflow_run
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: send_media
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: screenshot
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: file_search
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: memory
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: wiki
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:get_definitions:296 - Generated 14 tool definitions (14 builtin, 0 MCP)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:227 - Registered 14 tools
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:249 - Channel manager created
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:270 - MCP is disabled, skipping initialization
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:273 - Initializing OSS uploader (optional)...
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:283 - OSS uploader module not installed; skipping optional OSS uploader
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:296 - Started 2 channel(s) in background
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:300 - Started message handler in background
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:303 - Initializing cron system...
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:__init__:61 - ToolRegistry initialized (using contextvars for session isolation)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.file_audit_logger:set_enabled:44 - File audit logging enabled
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:set_audit_enabled:67 - Audit logging enabled
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:61 - ReadFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: read_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:294 - WriteFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: write_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:377 - EditFileTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: edit_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:525 - ListDirTool initialized
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: list_dir
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:68 - Registered filesystem tools
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.shell:__init__:112 - ExecTool initialized: workspace=/app/workspace, timeout=180s, max_output=10000, allow_dangerous=False, restrict_to_workspace=False
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: exec
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:90 - Registered shell tools (dangerous_blocked=True, workspace_restricted=False)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: external_coding_agent
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:109 - Registered external coding agent tool with enabled profiles: claude, codex
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.web:__init__:193 - WebFetchTool initialized with: BeautifulSoup4 (better extraction), httpx (fallback)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: web_fetch
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:123 - Registered web fetch tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: spawn
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:134 - Registered spawn tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: workflow_run
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:147 - Registered workflow_run tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: send_media
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:164 - Registered send_media tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.screenshot:__init__:44 - ScreenshotTool initialized: workspace=/app/workspace, output_dir=screenshots
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: screenshot
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:174 - Registered screenshot tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.file_search:__init__:42 - FileSearchTool initialized (default_max_results: 20)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: file_search
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:188 - Registered file search tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: memory
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:198 - Registered memory tool (unified)
+2026-05-25 12:02:30 | INFO     | backend.modules.wiki.service:_load_or_rebuild_index:90 - BM25 index loaded from cache: 0 documents
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: wiki
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:210 - Registered wiki tool
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:223 - Xiaozhi send_message tool not registered - enabled=False, conversation=False
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: read_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: write_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: edit_file
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: list_dir
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: exec
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: external_coding_agent
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: web_fetch
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: spawn
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: workflow_run
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: send_media
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: screenshot
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: file_search
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: memory
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: wiki
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.registry:get_definitions:296 - Generated 14 tool definitions (14 builtin, 0 MCP)
+2026-05-25 12:02:30 | DEBUG    | backend.modules.tools.setup:register_all_tools:227 - Registered 14 tools
+2026-05-25 12:02:30 | DEBUG    | backend.modules.agent.loop:__init__:67 - AgentLoop initialized: max_iterations=25, max_retries=3
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:320 - Cron agent created
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:323 - Initializing heartbeat service...
+2026-05-25 12:02:30 | DEBUG    | backend.modules.agent.heartbeat:__init__:79 - HeartbeatService initialized: idle>4h, quiet 21:00-8:00 Asia/Beijing, max 2 greets/day
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:343 - Heartbeat service created
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:345 - Creating cron executor...
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:352 - Cron executor created
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:366 - Creating cron scheduler...
+2026-05-25 12:02:30 | INFO     | backend.modules.channels.handler:start_processing:439 - Message processing loop started
+2026-05-25 12:02:30 | DEBUG    | backend.modules.channels.manager:_dispatch_outbound:269 - Outbound dispatcher started
+2026-05-25 12:02:30 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:default channel...
+2026-05-25 12:02:30 | INFO     | backend.modules.channels.wechat:start:997 - [wechat:default] 微信渠道已启动
+2026-05-25 12:02:30 | INFO     | backend.modules.channels.manager:_start_channel_supervised:239 - Channel wechat:default is running in background mode
+2026-05-25 12:02:30 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:02:30 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:02:30 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 5s...
+2026-05-25 12:02:30 | INFO     | backend.modules.cron.scheduler:start:53 - Cron scheduler started (max_concurrent=3, timeout=1200s)
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:372 - Cron scheduler started
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:375 - Ensuring heartbeat job...
+2026-05-25 12:02:30 | DEBUG    | backend.modules.agent.heartbeat:ensure_heartbeat_job:546 - Heartbeat cron job already in sync
+2026-05-25 12:02:30 | INFO     | backend.modules.cron.scheduler:trigger_reschedule:367 - Triggering reschedule
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:378 - Heartbeat job ensured
+2026-05-25 12:02:30 | INFO     | backend.app:lifespan:403 - Backend started successfully
+2026-05-25 12:02:31 | INFO     | backend.modules.cron.scheduler:schedule_next:157 - Timer cancelled
+2026-05-25 12:02:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:02:35 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:02:35 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:02:35 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 10s...
+2026-05-25 12:02:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:02:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:02:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 20s...
+2026-05-25 12:03:05 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:03:05 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:03:05 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 40s...
+2026-05-25 12:03:26 | INFO     | backend.modules.auth.utils:create_session:196 - Auth session created for user: 123456
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:__init__:61 - ToolRegistry initialized (using contextvars for session isolation)
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.file_audit_logger:set_enabled:44 - File audit logging enabled
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:set_audit_enabled:67 - Audit logging enabled
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:61 - ReadFileTool initialized
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: read_file
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:294 - WriteFileTool initialized
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: write_file
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:377 - EditFileTool initialized
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: edit_file
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:525 - ListDirTool initialized
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: list_dir
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:68 - Registered filesystem tools
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.shell:__init__:112 - ExecTool initialized: workspace=/app/workspace, timeout=180s, max_output=10000, allow_dangerous=False, restrict_to_workspace=False
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: exec
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:90 - Registered shell tools (dangerous_blocked=True, workspace_restricted=False)
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: external_coding_agent
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:109 - Registered external coding agent tool with enabled profiles: claude, codex
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.web:__init__:193 - WebFetchTool initialized with: BeautifulSoup4 (better extraction), httpx (fallback)
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: web_fetch
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:123 - Registered web fetch tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: spawn
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:134 - Registered spawn tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: workflow_run
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:147 - Registered workflow_run tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: send_media
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:164 - Registered send_media tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.screenshot:__init__:44 - ScreenshotTool initialized: workspace=/app/workspace, output_dir=screenshots
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: screenshot
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:174 - Registered screenshot tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.filesystem:__init__:17 - WorkspaceValidator initialized with workspace: /app/workspace
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.file_search:__init__:42 - FileSearchTool initialized (default_max_results: 20)
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: file_search
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:188 - Registered file search tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: memory
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:198 - Registered memory tool (unified)
+2026-05-25 12:03:26 | INFO     | backend.modules.wiki.service:_load_or_rebuild_index:90 - BM25 index loaded from cache: 0 documents
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:register:162 - Registered tool: wiki
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:210 - Registered wiki tool
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:223 - Xiaozhi send_message tool not registered - enabled=False, conversation=False
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: read_file
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: write_file
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: edit_file
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: list_dir
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: exec
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: external_coding_agent
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: web_fetch
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: spawn
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: workflow_run
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: send_media
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: screenshot
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: file_search
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: memory
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.base:get_definition:205 - Generated definition for tool: wiki
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.registry:get_definitions:296 - Generated 14 tool definitions (14 builtin, 0 MCP)
+2026-05-25 12:03:26 | DEBUG    | backend.modules.tools.setup:register_all_tools:227 - Registered 14 tools
+2026-05-25 12:03:26 | DEBUG    | backend.modules.providers.factory:create_provider:78 - Using OpenAIProvider for qwen
+2026-05-25 12:03:26 | DEBUG    | backend.modules.agent.loop:__init__:67 - AgentLoop initialized: max_iterations=25, max_retries=3
+2026-05-25 12:03:26 | DEBUG    | backend.ws.connection:connect:336 - WebSocket 连接已建立: 415c9683-236d-42ea-a5f7-c72e52c7f8d9
+2026-05-25 12:03:26 | DEBUG    | backend.ws.connection:bind_session:389 - 连接 415c9683-236d-42ea-a5f7-c72e52c7f8d9 绑定到会话 a86713fb-0aad-4caf-8406-adeafec5381b (连接数: 0)
+2026-05-25 12:03:26 | DEBUG    | backend.ws.events:handle_subscribe_event:511 - 连接 415c9683-236d-42ea-a5f7-c72e52c7f8d9 订阅会话 a86713fb-0aad-4caf-8406-adeafec5381b
+2026-05-25 12:03:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:03:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:03:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:03:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 80s...
+2026-05-25 12:03:53 | INFO     | backend.modules.agent.skills:reload:652 - Reloading all skills
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_load_disabled_skills:173 - Skills config file not found: /app/workspace/.skills_config.json
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: agent-browser
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: agent-team-manager
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: baidu-search
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: cron-manager
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: email
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: find-skills
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: humanizer-1.0.0
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: ima-knowledge-base
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: ima-notes
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: image-analysis
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: map
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: news
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: skill-creator
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: web-design
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_load_all_skills:318 - Loaded 14 skills total
+2026-05-25 12:03:53 | INFO     | backend.api.skills:reload_skills:932 - Skills reloaded successfully: 14 total, 14 enabled
+2026-05-25 12:03:53 | INFO     | backend.modules.agent.skills:reload:652 - Reloading all skills
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_load_disabled_skills:173 - Skills config file not found: /app/workspace/.skills_config.json
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: agent-browser
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: agent-team-manager
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: baidu-search
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: cron-manager
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: email
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: find-skills
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: humanizer-1.0.0
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: ima-knowledge-base
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: ima-notes
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: image-analysis
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: map
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: news
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: skill-creator
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_register_skill:255 - Loaded workspace skill: web-design
+2026-05-25 12:03:53 | DEBUG    | backend.modules.agent.skills:_load_all_skills:318 - Loaded 14 skills total
+2026-05-25 12:03:53 | DEBUG    | backend.api.skills:list_skills:253 - Auto-reloaded skills when accessing skills page
+2026-05-25 12:04:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:05:05 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:05:05 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:05:05 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 160s...
+2026-05-25 12:05:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:06:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:07:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:07:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:07:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:07:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:08:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:09:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:10:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:11:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:12:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:12:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:12:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:12:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:13:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:14:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:15:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:16:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:17:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:17:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:17:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:17:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:18:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:19:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:20:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:21:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:22:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:22:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:22:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:22:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:23:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:24:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:25:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:26:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:27:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:27:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:27:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:27:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:28:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:29:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:30:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:31:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:32:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:32:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:32:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:32:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:33:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:34:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:35:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:36:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:37:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:37:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:37:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:37:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:38:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:39:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:40:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:41:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:42:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:42:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:42:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:42:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:43:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:44:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:45:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:46:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:47:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:47:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:47:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:47:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:48:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:49:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:50:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:51:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:52:30 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:52:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:52:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:52:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:53:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:54:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:55:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:56:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:57:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:57:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 12:57:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 12:57:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 12:58:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 12:59:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:00:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:01:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:02:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:02:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 13:02:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 13:02:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 13:03:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:04:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:05:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:06:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:07:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:07:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 13:07:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 13:07:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 13:08:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:09:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:10:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:11:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:12:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:12:45 | INFO     | backend.modules.channels.manager:_start_channel_supervised:236 - Starting wechat:bot channel...
+2026-05-25 13:12:45 | WARNING  | backend.modules.channels.wechat:start:980 - [wechat:bot] token 未配置，跳过启动
+2026-05-25 13:12:45 | WARNING  | backend.modules.channels.manager:_start_channel_supervised:254 - Channel wechat:bot exited, restarting in 300s...
+2026-05-25 13:13:31 | INFO     | backend.modules.cron.scheduler:schedule_next:138 - No jobs to schedule, sleeping 60s
+2026-05-25 13:14:20 | INFO     | backend.ws.events:websocket_event_loop:688 - 客户端断开连接: 415c9683-236d-42ea-a5f7-c72e52c7f8d9
+2026-05-25 13:14:20 | INFO     | backend.ws.connection:disconnect:365 - WebSocket 连接已断开: 415c9683-236d-42ea-a5f7-c72e52c7f8d9
+2026-05-25 13:14:20 | DEBUG    | backend.ws.connection:schedule_delayed_cancellation:150 - No task found for session a86713fb-0aad-4caf-8406-adeafec5381b, skip scheduling cancellation
+2026-05-25 13:14:20 | INFO     | backend.app:lifespan:408 - Initiating graceful shutdown...
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.manager:stop_all:210 - Stopping all channels...
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.wechat:stop:1017 - [wechat:default] 微信渠道已停止
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.manager:stop_all:215 - Stopped wechat:default channel
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.wechat:stop:1017 - [wechat:bot] 微信渠道已停止
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.manager:stop_all:215 - Stopped wechat:bot channel
+2026-05-25 13:14:20 | INFO     | backend.modules.cron.scheduler:schedule_next:157 - Timer cancelled
+2026-05-25 13:14:20 | INFO     | backend.modules.cron.scheduler:stop:84 - Cron scheduler stopped
+2026-05-25 13:14:20 | INFO     | backend.app:lifespan:411 - Backend shutdown complete
+2026-05-25 13:14:20 | INFO     | backend.utils.process_manager:_handle_shutdown_signal:200 - Received SIGTERM signal, initiating graceful shutdown...
+2026-05-25 13:14:20 | DEBUG    | backend.utils.process_manager:remove_pid_file:157 - PID file removed: data/.CountBot.pid
+2026-05-25 13:14:20 | INFO     | __main__:main:135 - Application shutdown complete
+2026-05-25 13:14:20 | INFO     | backend.app:cleanup_on_exit:388 - atexit cleanup triggered
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.manager:stop_all:210 - Stopping all channels...
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.wechat:stop:1017 - [wechat:default] 微信渠道已停止
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.manager:stop_all:215 - Stopped wechat:default channel
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.wechat:stop:1017 - [wechat:bot] 微信渠道已停止
+2026-05-25 13:14:20 | INFO     | backend.modules.channels.manager:stop_all:215 - Stopped wechat:bot channel
